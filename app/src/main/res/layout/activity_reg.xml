@@ -15,9 +15,9 @@
         android:layout_marginEnd="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginBottom="15dp"
-        android:background="#4CAF50"
-        android:text="Done"
-        android:textColor="#FFFFFF" />
+        android:background="@color/buttons"
+        android:text="@string/button_done"
+        android:textColor="@color/buttons_text" />
 
     <TextView
         android:id="@+id/Log"
@@ -29,21 +29,21 @@
         android:layout_marginStart="21dp"
         android:layout_marginLeft="21dp"
         android:layout_marginTop="29dp"
-        android:text="Registration"
-        android:textColor="#090C18"
+        android:text="@string/text_reg"
+        android:textColor="@color/text"
         android:textSize="36sp" />
 
 
     <ScrollView
         android:id="@+id/scroll"
         android:layout_width="match_parent"
-        android:layout_height="610dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_marginTop="121dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
 
@@ -62,23 +62,22 @@
                     android:id="@+id/editText2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Name"
-                    android:inputType="textPersonName"
-                    tools:text="Name" />
+                    android:hint="@string/hint_name"
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/editText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Password"
-                    android:inputType="textPersonName"
+                    android:hint="@string/hint_pass"
+                    android:inputType="textPassword"
                     tools:text="Password" />
 
             </LinearLayout>
 
             <RadioGroup
                 android:id="@+id/RadLay"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
                 android:layout_marginLeft="32dp"
@@ -87,55 +86,59 @@
 
                 <RadioButton
                     android:id="@+id/radioButton2"
-                    android:layout_width="110dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:checked="true"
-                    android:text="Client" />
+                    android:text="@string/text_client" />
 
                 <RadioButton
                     android:id="@+id/radioButton5"
-                    android:layout_width="263dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Customer" />
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/text_cust" />
 
             </RadioGroup>
 
-            <RadioGroup
-                android:layout_width="161dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="180dp"
-                android:layout_marginLeft="180dp"
-                android:layout_marginTop="100dp"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
                 android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/radioButton"
+                <TextView
+                    android:id="@+id/editText3"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:checked="true"
-                    android:text="Yes" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginLeft="26dp"
+                    android:text="@string/text_are_you"
+                    android:textSize="18sp" />
 
-                <RadioButton
-                    android:id="@+id/radioButton3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="42dp"
-                    android:layout_weight="1"
-                    android:text="No" />
-            </RadioGroup>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/editText3"
-                android:layout_width="174dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="26dp"
-                android:layout_marginLeft="26dp"
-                android:layout_marginTop="-40dp"
-                android:inputType="textPersonName"
-                android:text="Are you smoking?"
-                android:textSize="18sp" />
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
+                        android:checked="true"
+                        android:text="@string/text_yes" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/text_no" />
+                </RadioGroup>
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/textView"
@@ -143,14 +146,15 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="30dp"
-                android:text="Adress"
+                android:layout_marginTop="60dp"
+                android:text="@string/text_adr"
                 android:textSize="18sp" />
 
             <EditText
                 android:id="@+id/editText4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="top|start"
                 android:layout_marginStart="30dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
@@ -165,9 +169,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:gravity="center"
-                android:text="User Agreements"
-                android:textColor="#000000"
-                android:inputType="textMultiLine"
+                android:text="@string/text_user_agr"
+                android:textColor="@color/text"
                 android:lines="3"
                 android:textSize="18sp" />
 
@@ -175,8 +178,8 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT "
-                android:textColor="#000000"
+                android:text="@string/text_sample"
+                android:textColor="@color/text"
                 android:textSize="24sp"
                 android:gravity="center"/>
 
@@ -188,7 +191,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="70dp"
                 android:checked="true"
-                android:text="Agree with user agreements" />
+                android:text="@string/text_agree_with" />
 
 
         </LinearLayout>

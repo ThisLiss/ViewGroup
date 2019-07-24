@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">ViewGroupTest</string>
+    <string name="text_log">Login</string>
+    <string name="hint_log">Login</string>
+    <string name="hint_pass">Password</string>
+    <string name="text_client">Client</string>
+    <string name="text_cust">Customer</string>
+    <string name="button_log">Login</string>
+    <string name="button_password">Registration</string>
+    <string name="text_reg">Registration</string>
+    <string name="hint_name">Name</string>
+    <string name="text_are_you">Are you smoking?</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+    <string name="text_adr">Adress</string>
+    <string name="text_user_agr">User Agreements</string>
+    <string name="text_sample">SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT SAMPLE TEXT</string>
+    <string name="text_agree_with">Agree with user agreements</string>
+    <string name="button_done">Done</string>
 </resources>
